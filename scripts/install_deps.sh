@@ -1,3 +1,10 @@
+#!/bin/bash
+# install_deps.sh - dependency installation script for Ubuntu/Debian
+
+echo "Updating package lists..."
+sudo apt update
+
+echo "Installing build dependencies..."
 sudo apt install -y \
   build-essential autoconf automake libtool pkg-config cmake git ninja-build \
   libssl-dev zlib1g-dev libidn2-dev libncurses5-dev libncursesw5-dev \
