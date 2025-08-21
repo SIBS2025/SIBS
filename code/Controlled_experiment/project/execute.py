@@ -10,7 +10,7 @@ from subprocess import Popen
 sibs_folder = os.path.join(os.getcwd(),"SIBS") 
 buddi_folder = os.path.join(os.getcwd(),"BUDDI") 
 random_folder = os.path.join(os.getcwd(),"RANDOM") 
-output_folder = "yourpathto/SIBS/code/Ablation_Experiment/reslut/project"                  #The directory you want to output
+output_folder = "yourpathto/SIBS/code/Controlled_Experiment/reslut/project"                  #The directory you want to output
 source_folder = os.path.join(os.getcwd(),"goaccess")       #source_folder
 source_folder1 = os.path.join(os.getcwd(),"goaccess1")     #source_folder1
 
