@@ -12,7 +12,7 @@ First, navigate to the experiment directory and create the project folder:
 
 ```bash
 # Navigate to the experiment directory
-cd yourpathto/SIBS/code/Ablation_experiment/
+cd yourpathto/SIBS/code/Ablation_Experiment/
 
 # Copy the project template and rename it
 cp -r project goaccess
@@ -58,7 +58,7 @@ Modify path configurations in the following critical files:
 **SIBS/main.py (Line 13), SIBS1/main.py (Line 13), SIBS2/main.py (Line 13), SIBS3/main.py (Line 13)**
 
 ```python
-build_dir = os.path.join(parent_dir, "goaccess/goaccess-source")
+build_dir = os.path.join(parent_dir, "goaccess-source")
 ```
 
 #### Dependency Configuration Files
@@ -76,7 +76,7 @@ source_config = os.path.join(build_dir, "src/config.h")
 
 ```python
 output_folder = "yourpathto/SIBS/code/Ablation_Experiment/result/goaccess"
-source_folder = os.path.join(os.getcwd(), "goaccess/goaccess-source")
+source_folder = os.path.join(os.getcwd(), "goaccess-source")
 ```
 
 ### 4. Experimental Script Configuration
@@ -97,7 +97,7 @@ Edit `run_experiment2.py`:
 After completing the above configurations, execute the following command to run the experiment:
 
 ```bash
-python run_experiment2.py
+python3 run_experiment2.py
 ```
 
 ## 📊 Expected Results

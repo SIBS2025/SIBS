@@ -51,7 +51,7 @@ def execute_script(folder, copy_number):
 
 
 def worker_function(copy_number, memory_size_mb):
-    src_folder = "yourpathto\SIBS\code\Controlled_Experiment\project"  # Folder to be copied
+    src_folder = "yourpathto/SIBS/code/Controlled_Experiment/project"  # Folder to be copied
     copy_folder_and_execute(src_folder, copy_number, memory_size_mb)
 
 def main():
@@ -59,7 +59,7 @@ def main():
     memory_per_process_mb = 1024   # Memory allocated per process, in MB
 
     # Use process pool to handle tasks in parallel
-    with Pool(processes=8) as pool:  # Allow up to 16 concurrent processes
+    with Pool(processes=8) as pool:  # Allow up to x concurrent processes
         pool.starmap(worker_function, [(i, memory_per_process_mb) for i in range(1, num_copies + 1)])
 
 if __name__ == "__main__":

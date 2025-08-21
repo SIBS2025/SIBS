@@ -12,7 +12,7 @@ sibs1_folder = os.path.join(os.getcwd(),"SIBS1")
 sibs2_folder = os.path.join(os.getcwd(),"SIBS2")  
 sibs3_folder = os.path.join(os.getcwd(),"SIBS3")  
 buddi_folder= os.path.join(os.getcwd(),"BUDDI")  
-output_folder = "yourpathto\SIBS\code\Ablation_Experiment\reslut\project"    #The directory you want to output
+output_folder = "yourpathto/SIBS/code/Ablation_Experiment/reslut/project"    #The directory you want to output
 source_folder = os.path.join(os.getcwd(),"goaccess")
 
 

@@ -74,7 +74,7 @@ if __name__ == "__main__":
     for id, configs in id_configs_mapping.items():
         print(f'id: {id}, configs: {configs}')
 
-    for k in range(1, 4):
+    for k in range(1, 11):
         random_sequence = random.sample(range(1, 21), 20)
         print(random_sequence)
         timelist = buildtime(random_sequence, build_dir, id_configs_mapping)

@@ -1,5 +1,0 @@
-PROBLEM_FILE = test.tsp
-OUTPUT_TOUR_FILE = test_solution.txt
-MAX_TRIALS = 100
-RUNS = 10
-TRACE_LEVEL = 1

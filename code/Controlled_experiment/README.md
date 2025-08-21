@@ -12,7 +12,7 @@ First, navigate to the experiment directory and create the project folder:
 
 ```bash
 # Navigate to the experiment directory
-cd yourpathto/SIBS/code/Controlled_experiment/
+cd yourpathto/SIBS/code/Controlled_Experiment/
 
 # Copy the project template and rename it
 cp -r project goaccess
@@ -56,28 +56,26 @@ Modify path configurations in the following files:
 #### SIBS/main.py (Line 13)
 
 ```python
-build_dir = os.path.join(parent_dir, "goaccess/goaccess-source")
+build_dir = os.path.join(parent_dir, "goaccess-source")
 ```
 
 #### SIBS/create_dependencies.py (Line 27)
 
 ```python
 source_config = os.path.join(build_dir, "src/config.h")
-#Header file corresponding to goaccess in yourpathto\sibs\code\config.xls
+#Header file corresponding to goaccess in yourpathto/sibs/code/config.xls
 ```
 
 #### BUDDI/main.py (Line 150)
 
 ```python
-build_dir = os.path.join(parent_dir, "goaccess/goaccess-source1")
+build_dir = os.path.join(parent_dir, "goaccess-source1")
 ```
 
 #### RANDOM/main.py (Line 70)
 
-python
-
-```
-build_dir = os.path.join(parent_dir, "goaccess/goaccess-source")
+```python
+build_dir = os.path.join(parent_dir, "goaccess-source")
 ```
 
 #### execute.py (Lines 13-15)
@@ -86,8 +84,8 @@ python
 
 ```
 output_folder = "yourpathto/SIBS/code/Controlled_Experiment/result/goaccess"
-source_folder = os.path.join(os.getcwd(), "goaccess/goaccess-source")
-source_folder1 = os.path.join(os.getcwd(), "goaccess/goaccess-source1")
+source_folder = os.path.join(os.getcwd(), "goaccess-source")
+source_folder1 = os.path.join(os.getcwd(), "goaccess-source1")
 ```
 
 ### 4. Experiment Script Configuration
@@ -112,7 +110,7 @@ After completing the above configurations, execute the following command to run 
 bash
 
 ```
-python run_experiment1.py
+python3 run_experiment1.py
 ```
 
 ## 📊 Expected Results

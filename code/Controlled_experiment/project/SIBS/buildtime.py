@@ -13,7 +13,7 @@ def buildtime(path,build_dir,map_file):
     print(buildorder)
     timelist = defaultdict(list)
     timecount = 0
-    for n in range(0,1):
+    for n in range(0,3):
         comm = "make clean"
         run_procpip(comm,build_dir)
         for config in buildorder:
