@@ -216,7 +216,7 @@ For questions about the build process or dependencies, please open an issue in t
 
 For detailed experiment setup instructions, refer to:
 
-- [`code/Controlled_experiment/README.md`](https://code/Controlled_experiment/README.md) - Controlled experiments guide
-- [`code/Ablation_Experiment/README.md`](https://code/Ablation_Experiment/README.md) - Ablation study guide
+- code/Controlled_experiment/README.md - Controlled experiments guide
+- code/Ablation_Experiment/README.md - Ablation study guide
 
 These guides provide step-by-step instructions for configuring and running specific experiments with projects like goaccess and other tested software.
