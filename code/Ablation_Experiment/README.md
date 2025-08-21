@@ -70,6 +70,16 @@ source_config = os.path.join(build_dir, "src/config.h")
 # Header file corresponding to goaccess in yourpathto/SIBS/code/config.xls
 ```
 
+#### Execute permissions
+
+**SIBS/LKH，SIBS2/LKH，SIB3/LKH**
+
+```bash
+chmod +x SIBS/LKH
+chmod +x SIBS2/LKH
+chmod +x SIBS3/LKH
+```
+
 #### Execution Script
 
 **execute.py (Lines 13-15)**

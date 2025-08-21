@@ -7,6 +7,34 @@ The proposed **SIBS** is designed to efficiently sort incrementally built sequen
 
 ------
 
+## 🚀 Quick Start
+
+### 1. Clone and Setup
+
+```bash
+git clone https://github.com/SIBS2025/SIBS
+cd SIBS
+
+# Install all dependencies
+sudo ./scripts/install_deps.sh
+
+# Set up Python environment
+pip install -r requirements.txt
+```
+
+### 2. Adjust parameters
+
+Each component in the `code/` directory has its own README file. Refer to individual README files for specific information.
+
+### 3. Run Experiments
+
+```bash
+cd yourpathto/code/Controlled_experiment
+python run_experiment1.py 
+```
+
+------
+
 ## 📂 Project Structure
 
 text
@@ -57,51 +85,28 @@ sudo ./scripts/install_deps.sh
 #### Option 2: Manual Installation
 
 ```bash
-# Install all dependencies in one command
+echo "Updating package lists..."
+sudo apt update
+
+echo "Installing build dependencies..."
 sudo apt install -y \
-  # Core development
   build-essential autoconf automake libtool pkg-config cmake git ninja-build \
-  # System libraries
-  libssl-dev libz-dev libidn2-dev libncurses5-dev libncursesw5-dev \
+  libssl-dev zlib1g-dev libidn2-dev libncurses5-dev libncursesw5-dev \
   libreadline-dev libevent-dev libsqlite3-dev libyaml-dev libxml2-dev \
   libpthread-stubs0-dev liblzma-dev libpcre3-dev libudev-dev \
-  # Multimedia & codecs
   nasm yasm libx264-dev libx265-dev libvpx-dev libmp3lame-dev \
   libopus-dev libfdk-aac-dev libass-dev libfreetype6-dev libsdl2-dev \
   libavcodec-dev libavformat-dev libavutil-dev libswscale-dev \
-  # Networking & security
-  libssh2-dev libnghttp2-dev librtmp-dev libpsl-dev libldap2-dev \
+  libssh2-1-dev libnghttp2-dev librtmp-dev libpsl-dev libldap2-dev \
   libkrb5-dev libbrotli-dev libcurl4-openssl-dev \
-  # Specialized libraries
-  libgd-dev libboost-all-dev libfam-dev libgeoip-dev \
+  libgd-dev libboost-all-dev libgamin-dev libgeoip-dev \
   libtokyocabinet-dev libmaxminddb-dev libonig-dev libicu-dev \
-  libpq-dev libjemalloc-dev libatomic1-dev \
-  # Build utilities
+  libpq-dev libjemalloc-dev \
   flex bison asciidoc xmlto gettext \
-  # System integration
   libutempter-dev libacl1-dev libselinux1-dev libfuse-dev \
   libjpeg-dev libfontconfig1-dev libpam0g-dev
-```
 
-### Platform-Specific Instructions
-
-#### CentOS/RHEL
-
-```bash
-sudo yum groupinstall "Development Tools"
-sudo yum install -y \
-  openssl-devel zlib-devel ncurses-devel readline-devel \
-  libevent-devel sqlite-devel libyaml-devel libxml2-devel \
-  pcre-devel libcurl-devel libjpeg-turbo-devel
-```
-
-#### macOS (Homebrew)
-
-```bash
-brew install automake pkg-config cmake ninja
-brew install openssl zlib ncurses readline libevent
-brew install x264 ffmpeg libusb pcre2 boost curl
-brew install jpeg libpng webp freetype sdl2
+echo "Dependency installation completed!"
 ```
 
 ------
@@ -117,47 +122,6 @@ brew install jpeg libpng webp freetype sdl2
 
 ```bash
 pip install -r requirements.txt
-```
-
-### Recommended: Virtual Environment
-
-```bash
-# Create virtual environment
-python -m venv sibs-env
-
-# Activate virtual environment
-# Linux/macOS
-source sibs-env/bin/activate
-# Windows
-sibs-env\Scripts\activate
-
-# Install dependencies in virtual environment
-pip install -r requirements.txt
-```
-
-
-
-## 🚀 Quick Start
-
-### 1. Clone and Setup
-
-```bash
-git clone https://github.com/SIBS2025/SIBS
-cd SIBS
-
-# Install all dependencies
-sudo ./scripts/install_deps.sh
-```
-
-### 2. Adjusting parameters
-
-Each component in the `code/` directory has its own README file. Refer to individual README files for specific information.
-
-### 3. Run Experiments
-
-```bash
-cd yourpathto/code/Controlled_experiment
-python run_experiment1.py 
 ```
 
 ------
@@ -217,6 +181,6 @@ For questions about the build process or dependencies, please open an issue in t
 For detailed experiment setup instructions, refer to:
 
 - code/Controlled_experiment/README.md - Controlled experiments guide
-- code/Ablation_Experiment/README.md - Ablation study guide
+- code/Ablation_Experiment/README.md - Ablation experiments guide
 
 These guides provide step-by-step instructions for configuring and running specific experiments with projects like goaccess and other tested software.

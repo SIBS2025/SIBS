@@ -80,12 +80,16 @@ build_dir = os.path.join(parent_dir, "goaccess-source")
 
 #### execute.py (Lines 13-15)
 
-python
-
-```
+```python
 output_folder = "yourpathto/SIBS/code/Controlled_Experiment/result/goaccess"
 source_folder = os.path.join(os.getcwd(), "goaccess-source")
 source_folder1 = os.path.join(os.getcwd(), "goaccess-source1")
+```
+
+#### SIBS/LKH
+
+```bash
+chmod +x SIBS/LKH
 ```
 
 ### 4. Experiment Script Configuration
