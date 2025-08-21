@@ -106,22 +106,43 @@ brew install jpeg libpng webp freetype sdl2
 
 ------
 
-## 📦 Python Dependencies
+## 📦 Python Dependencies Management
 
-Install Python packages for data analysis and experimentation:
+### Python Environment Requirements
+
+- **Python 3.8+** (Recommended Python 3.9 or 3.10)
+- **pip** (Python package manager)
+
+### Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-------
+### Recommended: Virtual Environment
+
+```bash
+# Create virtual environment
+python -m venv sibs-env
+
+# Activate virtual environment
+# Linux/macOS
+source sibs-env/bin/activate
+# Windows
+sibs-env\Scripts\activate
+
+# Install dependencies in virtual environment
+pip install -r requirements.txt
+```
+
+
 
 ## 🚀 Quick Start
 
 ### 1. Clone and Setup
 
 ```bash
-git clone https://github.com/your-username/SIBS.git
+git clone https://github.com/SIBS2025/SIBS
 cd SIBS
 
 # Install all dependencies
