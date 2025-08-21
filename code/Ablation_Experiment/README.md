@@ -35,8 +35,9 @@ mkdir configtxt
 
 Create `configtxt/config.txt` file with the following content:
 
-```text
 #The content can be any option obtained after executing ./configure --help
+
+```text
 --disable-option-checking
 --enable-silent-rules
 --disable-nls
