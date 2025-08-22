@@ -46,7 +46,7 @@ SIBS/
 ├── code/                          # Source code for experiments
 │   ├── Ablation_Experiment/       # Code for ablation study
 │   └── Controlled_experiment/     # Code for controlled experiments
-│   └── config.xls                 # Experiment configuration file
+│   └── config.xlsx                # Experiment configuration file
 │
 ├── result/                        # Experimental results
 │   ├── Ablation_experiment/       # Results of ablation study
