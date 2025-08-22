@@ -16,6 +16,8 @@ git clone https://github.com/SIBS2025/SIBS
 cd SIBS
 
 # Install all dependencies
+sudo apt update
+chmod +x scripts/install_deps.sh
 sudo ./scripts/install_deps.sh
 
 # Set up Python environment

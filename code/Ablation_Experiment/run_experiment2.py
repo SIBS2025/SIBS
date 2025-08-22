@@ -51,7 +51,7 @@ def execute_script(folder, copy_number):
 
 
 def worker_function(copy_number, memory_size_mb):
-    src_folder = "yourpathto/SIBS/code/Ablation_experiment/project"  # Folder to be copied
+    src_folder = "yourpathto/SIBS/code/Ablation_Experiment/project"  # Folder to be copied
     copy_folder_and_execute(src_folder, copy_number, memory_size_mb)
 
 def main():
