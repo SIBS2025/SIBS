@@ -88,10 +88,10 @@ def main():
 
     sibs_script = os.path.join(sibs_folder, "main.py")
     if execute_python_file(sibs_script, sibs_folder):
-        save_result_file(sibs_folder, "matrix.txt", "matrix_sibs", i, matrix_folder)
-        save_result_file(sibs_folder, "path2.txt", "path_sibs", i, path_folder)
-        save_result_file(sibs_folder, "Timecount.txt", "Timecount_sibs", i, timecount_folder)
-        save_result_file(sibs_folder, "Summarize.txt", "Summarize_sibs", i, summarize_folder)
+        save_result_file(sibs_folder, "matrix.txt", "matrix_SIBS", i, matrix_folder)
+        save_result_file(sibs_folder, "path2.txt", "path_SIBS", i, path_folder)
+        save_result_file(sibs_folder, "Timecount.txt", "Timecount_SIBS", i, timecount_folder)
+        save_result_file(sibs_folder, "Summarize.txt", "Summarize_SIBS", i, summarize_folder)
 
     copy_and_rename_folder(source_folder)
     run_procpip(comm, source_folder1)
