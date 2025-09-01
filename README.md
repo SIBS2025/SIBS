@@ -1,4 +1,4 @@
-# SIBS: Semantic-aware Incremental Build System
+# SIBS: Semantics-driven Incremental Build Strategy
 
 This repository contains the source code and experimental setup for the paper:
 **"Enhancing Incremental Builds Across Multiple Configurations via Build Semantics"**
