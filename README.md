@@ -43,11 +43,7 @@ text
 
 ```
 SIBS/
-├── code/                          # Source code for experiments
-│   ├── Ablation_Experiment/       # Code for ablation study
-│   └── Controlled_experiment/     # Code for controlled experiments
-│   └── config.xlsx                # Experiment configuration file
-│
+
 ├── result/                        # Experimental results
 │   ├── Ablation_experiment/       # Results of ablation study
 │   ├── Controlled_experiment/     # Results of controlled experiments
@@ -55,6 +51,11 @@ SIBS/
 │
 ├── scripts/                       # Utility scripts
 │   └── install_deps.sh            # Dependency installation script
+│
+├── source/                        # Source code for experiments
+│   ├── Ablation_Experiment/       # Code for ablation study
+│   └── Controlled_experiment/     # Code for controlled experiments
+│   └── config.xlsx                # Experiment configuration file
 │
 ├── LICENSE                        # License file
 ├── README.md                      # Documentation
